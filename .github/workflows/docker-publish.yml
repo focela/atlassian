@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+    paths:
+      - Dockerfile
 
 jobs:
   build:
@@ -31,5 +33,4 @@ jobs:
       - name: Push Docker image to Docker Hub
         run: |
           docker buildx create --use
-          docker buildx build --platform linux/amd64,linux/arm64 -t ${{ secrets.DOCKER_HUB_USERNAME }}/jira:${{ github.sha }} --push .
           docker buildx build --platform linux/amd64,linux/arm64 -t ${{ secrets.DOCKER_HUB_USERNAME }}/jira:9.12.14 --push .
