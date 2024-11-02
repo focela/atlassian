@@ -5,8 +5,12 @@ This repository contains the `atlassian-agent.jar` file along with related confi
 
 ## 📂 Contents
 
-- **☕ atlassian-agent.jar**: The core agent for license management in Atlassian products.
-- **📑 LICENSE**: Terms and conditions for the use of this software, restricted for internal purposes only within Focela Technologies.
+- **📘 `README.md`**: Overview of the project, including usage instructions, setup, and guidelines for integrating `atlassian-agent.jar` with Atlassian products.
+- **📑 `LICENSE`**: Terms and conditions that restrict the usage of this software for internal purposes within Focela Technologies only. Redistribution or sharing without permission is prohibited.
+- **📅 `CHANGELOG.md`**: A record of all notable changes made to this project, following the principles of versioning and transparency.
+- **🤝 `CONTRIBUTING.md`**: Guidelines for contributing to this repository, including how to report issues, submit feature requests, and create pull requests.
+- **🌐 `CODE_OF_CONDUCT.md`**: Standards for interaction and community behavior to maintain a respectful and welcoming environment.
+- **🔐 `SECURITY.md`**: Instructions for reporting security vulnerabilities responsibly, along with details on response procedures.
 
 ## 🚀 Usage
 
