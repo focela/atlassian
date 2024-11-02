@@ -1,120 +1,104 @@
-### IntelliJ & JetBrains IDEs ###
-# Covers JetBrains IDEs like IntelliJ IDEA, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm, and Rider
+#-----------------------------------------------------------------------------
+# Git Ignore Configuration
+#
+# Purpose: Defines files and directories that should be excluded from
+# version control. Organized by category for easy maintenance and
+# understanding of what gets ignored and why.
+#
+# Note: Patterns are checked in order. More specific patterns should
+# come after general ones. Use comments to explain non-obvious patterns.
+#-----------------------------------------------------------------------------
+
+
+
+#-----------------------------------------------------------------------------
+# OPERATING SYSTEM FILES
+#-----------------------------------------------------------------------------
+# macOS system and metadata files
+.DS_Store
+.apdisk
+._*
+.AppleDB
+.AppleDesktop
+.AppleDouble
+.com.apple.timemachine.donotpresent
+.DocumentRevisions-V100
+.fseventsd
+.LSOverride
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+Icon
+Network Trash Folder
+Temporary Items
+
+#-----------------------------------------------------------------------------
+# DEVELOPMENT ENVIRONMENT FILES
+#-----------------------------------------------------------------------------
+# JetBrains IDEs (IntelliJ IDEA, WebStorm, PyCharm, etc.)
+.idea/
+.idea_modules/
+.idea/$CACHE_FILE$
+.idea/**/aws.xml
+.idea/**/azureSettings.xml
+.idea/**/codestream.xml
+.idea/**/contentModel.xml
+.idea/**/dbnavigator.xml
 .idea/**/dictionaries
+.idea/**/dynamic.xml
+.idea/**/gradle.xml
+.idea/**/httpRequests
+.idea/**/libraries
+.idea/**/markdown-navigator/
+.idea/**/mongoSettings.xml
 .idea/**/shelf
+.idea/**/sonarIssues.xml
+.idea/**/sonarlint/
+.idea/**/sqlDataSources.xml
 .idea/**/tasks.xml
+.idea/**/uiDesigner.xml
 .idea/**/usage.statistics.xml
 .idea/**/workspace.xml
+.idea/caches/build_file_checksums.ser
+.idea/misc.xml
+.idea/replstate.xml
+modules.xml
 
-### AWS Plugin (JetBrains IDE) ###
-.idea/**/aws.xml
+# IntelliJ project files
+*.iml
+*.ipr
 
-### Generated files ###
-.idea/**/contentModel.xml
-
-### Sensitive or High-Churn Files ###
-.idea/**/dataSources.ids
-.idea/**/dataSources.local.xml
-.idea/**/dataSources.xml
-.idea/**/dataSources/
-.idea/**/dbnavigator.xml
-.idea/**/dynamic.xml
-.idea/**/sqlDataSources.xml
-.idea/**/uiDesigner.xml
-
-### Gradle Specific Files ###
-.idea/**/gradle.xml
-.idea/**/libraries
-
-### Mongo Explorer Plugin ###
-.idea/**/mongoSettings.xml
-
-### Crashlytics Plugin (Android Studio & IntelliJ) ###
+#-----------------------------------------------------------------------------
+# THIRD-PARTY PLUGIN FILES
+#-----------------------------------------------------------------------------
+# External development tools and plugins
+atlassian-ide-plugin.xml
 com_crashlytics_export_strings.xml
 crashlytics-build.properties
 crashlytics.properties
 fabric.properties
 
-### SonarLint Plugin ###
-.idea/sonarlint/
+#-----------------------------------------------------------------------------
+# SECURITY AND CONFIGURATION
+#-----------------------------------------------------------------------------
+# Sensitive configuration and security files
+.env
+.well-known/
 
-### Editor-based REST Client ###
-.idea/httpRequests
-
-### SonarQube Plugin ###
-.idea/**/sonarIssues.xml
-
-### Markdown Navigator Plugin ###
-.idea/**/markdown-navigator-enh.xml
-.idea/**/markdown-navigator.xml
-.idea/**/markdown-navigator/
-
-### CodeStream Plugin ###
-.idea/codestream.xml
-
-### Azure Toolkit for IntelliJ ###
-.idea/**/azureSettings.xml
-
-### Miscellaneous Files ###
-.idea/$CACHE_FILE$
-.idea/replstate.xml
-.idea/misc.xml
-
-### MacOS System Files ###
-# Reference: https://github.com/github/gitignore/blob/master/Global/macOS.gitignore
-# General
-.AppleDouble
-.DS_Store
-.idea
-.LSOverride
-
-# Icon must end with two carriage returns
-Icon\r\r
-
-# Thumbnails
-._*
-
-# Files that might appear in the root of a volume
-.com.apple.timemachine.donotpresent
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-
-# Directories potentially created on remote AFP share
-.apdisk
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-
-### SSL Directories ###
-.well-known
-
-### Logs and Temporary Files ###
+#-----------------------------------------------------------------------------
+# LOGS AND TEMPORARY FILES
+#-----------------------------------------------------------------------------
+# Application and system logs
 *.log
 *.tmp
 logs/
-*.bak
-tmp/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-### Docker ###
-.dockerignore
-
-### Environment Files ###
-.env
-
-### Build Tools ###
-# Gradle
-build/
-.gradle/
-
-# CMake
-cmake-build-*/
-
-### Project-Specific Files ###
-*.iml
-*.ipr
-modules.xml
+#-----------------------------------------------------------------------------
+# CONTAINER AND ORCHESTRATION
+#-----------------------------------------------------------------------------
+# Docker and Kubernetes configuration
+.kube/
